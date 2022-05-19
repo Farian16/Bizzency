@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --main-color: #0f2f44;
+    --yellow: #ffc712;
+    --primary-font: "Ubuntu", sans-serif;
+    --secondary-font: "Open Sans", sans-serif;
+    --third-font: "Abril Fatface", cursive;
+}
+  
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+  
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+  
+.container {
+    width: 1170px;
+    margin: auto;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.btn {
+    padding: 16px 21px;
+    background-color: var(--yellow);
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+  
+.heading *:first-child {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 300;
+}
+  
+.heading *:last-child {
+    color: var(--main-color);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--third-font);
+}
+  
+.align-center {
+    align-items: center;
+}
+  
+/* common css ends */
+  
+/* header Starts */
+header {
+    background-color: var(--main-color);
+    color: white;
+    padding: 18px 0;
+}
+  
+header .welcome,
+header .openingTime {
+    width: 50%;
+}
+header .openingTime {
+    text-align: right;
+}
+/* header ends */
+  
+/* nav starts  */
+nav .logo {
+    width: 40%;
+}
+nav .menu {
+    width: 60%;
+}
+  
+nav .menu ul {
+    text-align: right;
+}
+nav .menu ul li {
+    display: inline-block;
+    position: relative;
+}
+  
+nav .menu ul li a {
+    padding: 40px 12px;
+    display: block;
+    color: #222;
+    font-weight: 500;
+    transition: 0.3s;
+}
+  
+nav .menu ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+nav .menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+nav .menu ul li ul li {
+    display: block;
+}
+nav .menu ul li ul li a {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+  
+nav .menu ul li:hover > a {
+    color: var(--yellow);
+    background-color: #fff9e6;
+}
+  
+nav .menu ul li a span {
+    display: inline-block;
+    transition: 0.3s;
+}
+  
+nav .menu ul li:hover a span {
+    transform: rotate(-180deg);
+}
+  
+nav .menu ul li:last-child span {
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    color: #999;
+    border: 1px solid #dfdfdf;
+}
+  
+/* nav ends  */
+/* banner starts */
+#banner {
+    --height: 600px;
+    background-image: url(../img/banner-1-.png);
+    background-color: #e0eeff;
+    height: var(--height);
+    background-repeat: no-repeat;
+    background-position: 100% bottom;
+}
+#banner .row{
+    height: var(--height);
+}
+.banner_cnt {
+    width: 40%;
+}
+.banner_cnt h3{
+    font-size: 50px;
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.banner_cnt h2{
+    font-size: 80px;
+    color: var(--main-color);
+    font-weight: 400;
+    font-family: var(--third-font);
+    text-transform: uppercase;
+    margin: -20px 0;
+}
+.banner_cnt h4{
+    font-size: 32px;
+    color: #8484bf;
+    font-weight: 400;
+    letter-spacing: 16px;
+}
+.banner_cnt p{
+    margin: 30px 0;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: #444;
+    line-height: 25px;
+}
+.banner_cnt .btn{
+    background-color: #8484bf;
+    color: #ddd;
+}
+.banner_cnt .player{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #8484bf;
+    margin: 0 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+}
+/* banner ends */
+/* about starts */
+#about{
+    padding: 100px 0;
+}
+
+#about .text,
+#about .logo{
+    width: 50%;
+}
+.logo img{
+    width: ;
+    display: block;
+}
+/* about starts */
+/* skils starts */
+#skills{
+    padding: 100px 0;
+}
+#skills .skill_img,
+#skills .skill_details{
+    width: 50%;
+}
+.skill_img img{
+    width: 100%;
+    display: block;
+}
+.skill_details{
+    text-align: right;
+}
+.skill_details >p{
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+}
+.skill_details .myskill{
+    margin: 20px 0;
+}
+.skill_details .myskill .progress{
+    width: 90%;
+}
+.skill_details .myskill .icon{
+    width: 10%;
+}
+/* skils ends */
+
+
+  
